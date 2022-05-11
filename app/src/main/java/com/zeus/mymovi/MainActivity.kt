@@ -5,10 +5,9 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
@@ -18,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.focusModifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.zeus.mymovi.ui.theme.MyMoviTheme
 
 class MainActivity : ComponentActivity() {
@@ -35,24 +35,63 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@Preview(showBackground = true)
+@Composable
+fun MediaItem(){
+    Column {
+        Box(
+            modifier = Modifier
+                .height(200.dp)
+                .fillMaxWidth()
+                .background(color = Color.Red)
+        ){
 
-@Preview(
-    showBackground = true,
-    name = "Android Greeting",
-    widthDp = 400,
-    heightDp = 200
-)
+        }
+
+        Box(
+            contentAlignment = Alignment.Center,
+            modifier = Modifier
+                .fillMaxSize()
+                .background(MaterialTheme.colors.secondary)
+                .padding(16.dp)
+        ){
+            Text("Title 1")
+        }
+
+
+    }
+}
+
+//@Preview(showBackground = true, widthDp = 200, heightDp = 100)
+@Composable
+fun ButtonText() {
+    Box(
+        modifier = Modifier.fillMaxSize(),
+        contentAlignment = Alignment.Center
+    ) {
+        Text(
+            text = "Hello World",
+            modifier = Modifier
+                .clickable { /* TODO */ }
+                .background(Color.Cyan)
+                .border(2.dp, Color.Blue)
+                .padding(horizontal = 16.dp, vertical = 8.dp)
+
+        )
+    }
+}
+
 @Composable
 fun DefaultPreview() {
     MyMoviTheme {
-        Column(
+        Row(
             modifier = Modifier.fillMaxSize(),
-            verticalArrangement = Arrangement.SpaceEvenly
+            horizontalArrangement = Arrangement.SpaceEvenly,
+            verticalAlignment = Alignment.CenterVertically
 
         ) {
             Greeting("Zeus", modifier = Modifier.background(Color.LightGray))
             Greeting("Android", modifier = Modifier.background(Color.Yellow))
-            Greeting("Zeus", modifier = Modifier.background(Color.Cyan))
         }
 
     }
@@ -60,5 +99,8 @@ fun DefaultPreview() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(text = "Hello $name!", modifier = modifier)
+    Text(
+        text = "Hello $name!",
+        modifier = modifier
+    )
 }
