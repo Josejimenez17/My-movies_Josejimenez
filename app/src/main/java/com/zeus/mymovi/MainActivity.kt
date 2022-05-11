@@ -15,9 +15,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.focusModifier
+import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Shadow
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.em
+import androidx.compose.ui.unit.sp
 import com.zeus.mymovi.ui.theme.MyMoviTheme
 
 class MainActivity : ComponentActivity() {
@@ -55,7 +60,10 @@ fun MediaItem(){
                 .background(MaterialTheme.colors.secondary)
                 .padding(16.dp)
         ){
-            Text("Title 1")
+            Text(
+                text = "Title 1",
+                style = MaterialTheme.typography.h6)
+
         }
 
 
@@ -71,15 +79,23 @@ fun ButtonText() {
     ) {
         Text(
             text = "Hello World",
-            modifier = Modifier
-                .clickable { /* TODO */ }
-                .background(Color.Cyan)
-                .border(2.dp, Color.Blue)
-                .padding(horizontal = 16.dp, vertical = 8.dp)
+            style = MaterialTheme.typography.h4.copy(
+                shadow = Shadow(
+                    offset = Offset(10f, 10f),
+                    blurRadius = 5f,
+                    color = Color.Black.copy(alpha = 0.5f)
+                )
+            ),
+
+           /* lineHeight = 2.em,
+            maxLines = 1,
+            softWrap = false,*/
+
 
         )
     }
 }
+
 
 @Composable
 fun DefaultPreview() {
