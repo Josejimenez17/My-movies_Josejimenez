@@ -1,6 +1,6 @@
-package com.zeus.mymovi
+package com.zeus.mymovi.model
 
-import com.zeus.mymovi.MediaItem.*
+import com.zeus.mymovi.model.MediaItem.*
 
 data class MediaItem(
     val id: Int,
