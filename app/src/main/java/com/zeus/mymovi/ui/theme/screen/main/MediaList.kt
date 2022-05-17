@@ -64,7 +64,7 @@ fun MediaListItem(
         modifier = modifier
             .clickable { navController.navigate("detail/${mediaitem.id}") },
              elevation = 8.dp,
-        shape = RoundedCornerShape(8.dp)
+        shape = RoundedCornerShape(10.dp)
     ) {
         Column {
             Thumb(mediaitem)

@@ -15,7 +15,7 @@ fun getMedia()  = (1..10).map {
     MediaItem(
         id = it,
         title = "Title $it",
-        thumb = "http://pics.filmaffinity.com/El_caballero_oscuro-102763119-large.jpg",
+        thumb = "https://picsum.photos/200/300?random=$it",
         type = if (it % 3 == 0) Type.VIDEO else Type.PHOTO
     )
 }

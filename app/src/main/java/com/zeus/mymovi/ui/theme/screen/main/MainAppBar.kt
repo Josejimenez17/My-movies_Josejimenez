@@ -17,8 +17,8 @@ fun MainAppBar() {
         TopAppBar (
             title = { Text(text = stringResource(id = R.string.app_name)) },
             actions = {
-                AppBarAction(
-                    imageVector = Icons.Default.Search,
+               AppBarAction(
+                    imageVector = Icons.Default.Share,
                     onclick = { /*TODO*/ }
                 )
                 AppBarAction(
@@ -35,9 +35,9 @@ private fun AppBarAction(
     imageVector: ImageVector,
     onclick: () -> Unit
  ) {
-    IconButton(onClick = { onclick}) {
+    IconButton(onClick =  onclick ) {
         Icon(
-            imageVector = Icons.Default.Share,
+            imageVector = Icons.Default.Search,
             contentDescription = null
         )
     }
