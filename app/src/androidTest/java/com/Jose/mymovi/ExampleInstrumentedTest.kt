@@ -1,4 +1,4 @@
-package com.zeus.mymovi
+package com.Jose.mymovi
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

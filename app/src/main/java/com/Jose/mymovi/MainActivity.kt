@@ -1,15 +1,16 @@
-package com.zeus.mymovi
+package com.Jose.mymovi
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.navigation.NavHost
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.zeus.mymovi.ui.theme.screen.main.MainScreen
-import com.zeus.mymovi.ui.theme.screen.main.detail.DetailScreen
+import com.Jose.mymovi.ui.theme.screen.main.MainScreen
+import com.Jose.mymovi.ui.theme.screen.main.detail.DetailScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

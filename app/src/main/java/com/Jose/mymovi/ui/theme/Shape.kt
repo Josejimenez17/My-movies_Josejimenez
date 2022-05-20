@@ -1,4 +1,4 @@
-package com.zeus.mymovi.ui.theme
+package com.Jose.mymovi.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

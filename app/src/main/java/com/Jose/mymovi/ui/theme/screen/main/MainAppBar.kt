@@ -1,4 +1,4 @@
-package com.zeus.mymovi.ui.theme.screen.main
+package com.Jose.mymovi.ui.theme.screen.main
 
 import androidx.compose.material.Icon
 import androidx.compose.material.IconButton
@@ -12,13 +12,14 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.stringResource
 import com.zeus.mymovi.R
 
+
 @Composable
 fun MainAppBar() {
         TopAppBar (
             title = { Text(text = stringResource(id = R.string.app_name)) },
             actions = {
                AppBarAction(
-                    imageVector = Icons.Default.Share,
+                    imageVector = Icons.Default.Search,
                     onclick = { /*TODO*/ }
                 )
                 AppBarAction(
@@ -37,7 +38,7 @@ private fun AppBarAction(
  ) {
     IconButton(onClick =  onclick ) {
         Icon(
-            imageVector = Icons.Default.Search,
+            imageVector = imageVector,
             contentDescription = null
         )
     }

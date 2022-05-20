@@ -1,4 +1,4 @@
-package com.zeus.mymovi
+package com.Jose.mymovi
 
 import org.junit.Test
 

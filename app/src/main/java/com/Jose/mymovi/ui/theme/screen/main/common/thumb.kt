@@ -1,4 +1,4 @@
-package com.zeus.mymovi.ui.theme.screen.main
+package com.Jose.mymovi.ui.theme.screen.main
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
@@ -13,7 +13,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberImagePainter
-import com.zeus.mymovi.model.MediaItem
+import com.Jose.mymovi.model.MediaItem
 
 @ExperimentalCoilApi
 @Composable

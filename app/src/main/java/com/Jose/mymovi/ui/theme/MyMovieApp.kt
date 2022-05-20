@@ -1,4 +1,4 @@
-package com.zeus.mymovi.ui.theme
+package com.Jose.mymovi.ui.theme
 
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface

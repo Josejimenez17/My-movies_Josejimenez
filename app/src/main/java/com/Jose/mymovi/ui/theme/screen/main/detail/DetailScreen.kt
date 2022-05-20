@@ -1,4 +1,4 @@
-package com.zeus.mymovi.ui.theme.screen.main.detail
+package com.Jose.mymovi.ui.theme.screen.main.detail
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.Scaffold
@@ -7,8 +7,8 @@ import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import com.zeus.mymovi.model.getMedia
-import com.zeus.mymovi.ui.theme.screen.main.Thumb
+import com.Jose.mymovi.model.getMedia
+import com.Jose.mymovi.ui.theme.screen.main.Thumb
 
 @Composable
 fun DetailScreen(mediaId: Int) {
