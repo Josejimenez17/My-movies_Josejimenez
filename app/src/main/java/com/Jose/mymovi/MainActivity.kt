@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                 composable("main") {
                     MainScreen(navController)
                 }
-//Jimenez
+//Jimenezasda
                 composable(
                     route = "detail/{mediaId}",
                     arguments = listOf(navArgument("mediaId"){
