@@ -1,5 +1,6 @@
 package com.Jose.mymovi
 
+
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
                 composable("main") {
                     MainScreen(navController)
                 }
-
+//Jimenez
                 composable(
                     route = "detail/{mediaId}",
                     arguments = listOf(navArgument("mediaId"){
